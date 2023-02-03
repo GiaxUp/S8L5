@@ -90,16 +90,9 @@ const search = async function () {
     if (textToSearch === "capitano") {
       search_results.innerHTML = `
       <div class="captain m-4">
-        <div><img src="../img/uomocannone.png" alt="uomocannone"></div>
-        <div><img src="../img/capitano.webp" alt="capitano"></div>
-
         <iframe class="mt-4" width="736" height="414" src="https://www.youtube.com/embed/xQKYKyLqF-c" title="La storia di Svyatoslav Gabuda, ovvero lo straordinario Uomo Cannone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
       </div>`;
-      // <div class= "py-4">
-      //     <a class=" text-light" href="https://youtu.be/xQKYKyLqF-c?t=30">
-      //     La storia di Svyatoslav Gabuda, ovvero lo straordinario "Uomo Cannone" del circo</a>
-      //   </div>
     } else {
       let res = await fetch(
         "https://striveschool-api.herokuapp.com/api/deezer/search?q=" +
