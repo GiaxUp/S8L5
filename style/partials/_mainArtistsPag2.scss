@@ -1,0 +1,141 @@
+.intestazioneArtist {
+  position: relative;
+  background-position-x: center;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  h5 {
+    padding-left: 20px;
+    font-size: 5em;
+    color: white;
+    font-weight: 800;
+  }
+  p {
+    padding-left: 20px;
+    font-size: 0.8em;
+    color: white;
+    margin: 0;
+
+    i {
+      color: #3d91f4;
+      font-size: 1.6em;
+    }
+  }
+}
+.tracceArtista {
+  margin: 0 10px 10px 10px;
+  .leftPlay{
+    .icona{
+        display: none;
+
+    }
+  
+    &:hover{
+        .icona{
+            display: inline;
+        }
+        .numero{
+            display: none;
+        }
+    }
+}
+  p {
+    color: rgb(159, 157, 157);
+    margin: 0;
+    font-size: $fontsizeMain;
+
+    span {
+      img {
+        width: 40px;
+        padding-right: 5px;
+      }
+    }
+  }
+  div.col-5 {
+    p {
+      color: white;
+      padding: 0;
+      margin: 0;
+      font-size: $fontsizeMain;
+    }
+  }
+}
+.bottoniArtista {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  button {
+    padding: 3px 10px;
+    font-size: 1em;
+    border-radius: 100%;
+    margin-right: 10px;
+
+    border: none;
+    aspect-ratio: 1/1;
+    background: transparent;
+    color: rgb(159, 157, 157);
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: white;
+    }
+  }
+  button.play {
+    background: transparent;
+    font-size: 3em;
+    color: $verdeSpotify;
+    text-align: center;
+  }
+  button.follow {
+    border: 1px outset white;
+
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 5px;
+    aspect-ratio: auto;
+    padding: 6px 10px;
+    &:hover {
+      border: 1px inset white;
+    }
+  }
+}
+.braniPreferiti {
+  div.col-3 {
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 18px;
+      color: rgb(13, 177, 13);
+      @media screen and (max-width: 900px) {
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  h5 {
+    color: white;
+    font-size: $fontsizeMain;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  p {
+    color: rgb(159, 157, 157);
+    font-size: $fontsizeMain;
+    padding: 0;
+    margin: 0;
+  }
+}

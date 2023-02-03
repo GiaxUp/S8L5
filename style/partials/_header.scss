@@ -1,0 +1,81 @@
+#playlistLidia {
+  overflow-y: scroll;
+  height: 280px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(51, 51, 51);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(85, 85, 85);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $verdeSpotify;
+}
+
+nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  padding: 24px;
+  height: 89vh;
+
+  .logo {
+    img {
+      width: 130px;
+    }
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      li {
+        padding: 10px 0px;
+        a {
+          color: #b3b3b3;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 12px;
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: #ffffff;
+          }
+
+          .fa {
+            font-size: $fontsizeMain;
+            margin-right: 10px;
+
+            &:hover,
+            &:active,
+            &:focus {
+              color: #b3b3b3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .playlist {
+    ul {
+      list-style: none;
+      margin-top: 20px;
+      a {
+        color: #858080;
+        text-decoration: none;
+        font-size: $fontsizeMain;
+      }
+    }
+  }
+}

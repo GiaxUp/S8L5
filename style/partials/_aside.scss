@@ -1,0 +1,32 @@
+aside {
+  background-color: black;
+  color: rgb(173, 173, 173);
+  font-size: 9px;
+  height: 89vh;
+  h2 {
+    font-size: $fontsizeMain;
+    padding-top: 10px;
+    font-weight: 800;
+    color: white;
+  }
+
+  .friend {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+    .name {
+      font-size: 10px;
+      font-weight: 700;
+      color: white;
+    }
+
+    img {
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      width: 45px;
+    }
+  }
+}

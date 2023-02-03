@@ -1,0 +1,32 @@
+.searchBar {
+  border: 0;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.captain {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div:nth-of-type(1) {
+    img {
+      width: 100%;
+    }
+  }
+  div:nth-of-type(2) {
+    // width: 100%;
+    img {
+      margin-top: 1em;
+    }
+  }
+}

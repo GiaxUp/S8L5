@@ -1,0 +1,151 @@
+#albumCaricati{
+    position: relative;  
+        
+}
+.sfondo{
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;  
+    
+       img{
+        // it's not a bug!! it's a feature =) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        filter: blur(900px) brightness(2) saturate(10000%);
+        // it's over 9000!!!!! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        width: 100%;
+        
+        height: 100%;
+    }
+}
+div.intestazioneAlbum{
+    margin: 0;    
+    padding: 50px 20px 10px 20px;
+    @media screen and (max-width:576px) {
+        padding: 20px 10px 5px 10px;        
+    }
+
+    background-color: transparent;
+        img {
+        box-shadow: 0px 0px 92px -5px rgba(0,0,0,1);
+    }
+    div.col-9{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        p{
+            font-size: $fontsizeMain;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            @media screen and (max-width:900px) {
+                margin-top: 10px;
+                
+            }
+            span{
+                img{
+                    border-radius: 100%;
+                    aspect-ratio: 1/1;
+                    width: 30px;
+                }
+            }
+
+        }
+        
+        h5{
+            font-size: 4em;
+            font-weight: 600;
+            @media screen and (max-width:1200px) {
+                font-size: 3em;
+                
+            }
+            @media screen and (max-width:850px) {
+                font-size: 2.5em;
+                
+            }
+        }
+    }
+}
+.bottoniAlbum{
+    
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    button{
+        padding: 10px 10px;
+        font-size: 1.8em;
+        border-radius: 100%;
+        margin-right: 10px;
+        
+    
+        border: none;
+        aspect-ratio: 1/1;
+        background: transparent;
+        color: rgb(159, 157, 157);
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            color: white;
+        }
+        
+    }
+    button.play{
+        background:transparent;
+        font-size: 3em;
+        color: #1db954;
+        text-align: center;
+        
+    }
+
+}
+.intestazioneTracceAlbum{
+    padding-top: 10px;
+    margin: 0 10px 20px 10px;
+    border-bottom: 1px solid  rgb(159, 157, 157,0.1);
+    ;
+    p{
+        color: rgb(159, 157, 157);
+        margin: 0;
+        padding-bottom: 5px;
+    }
+}
+.tracceAlbum{
+    margin: 0 10px 5px 10px;
+    p{
+        color: rgb(159, 157, 157);
+        
+       
+    }
+    .leftPlay{
+        .icona{
+            display: none;
+
+        }
+        .numero{
+            
+
+        }
+        &:hover{
+            .icona{
+                display: inline;
+            }
+            .numero{
+                display: none;
+            }
+        }
+    }
+    div.col-5{
+        p:nth-of-type(1){
+            font-weight: 400;
+            
+            color:  white;
+            padding: 0;
+            margin: 0;
+        }
+        p:nth-of-type(2){
+            font-size: 0.6em;
+            font-weight: 300;
+        }
+    }
+
+}

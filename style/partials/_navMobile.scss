@@ -1,0 +1,21 @@
+#navbarSmallScreen {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0));
+  div {
+    width: 100%;
+    ul {
+      width: 100%;
+      list-style-type: none;
+      margin-top: 20px;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
